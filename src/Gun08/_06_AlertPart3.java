@@ -18,7 +18,7 @@ public class _06_AlertPart3 extends BaseStaticDriver {
         driver.switchTo().alert().sendKeys("sinan");
 
         driver.switchTo().alert().accept();   //Alert kutucuğuna geçildi ve TAMAM butonuna basıldı
-        Bekle(2);
+        //Bekle(2);
 
         WebElement txtActual=driver.findElement(By.id("prompt-demo"));
         Assert.assertTrue(txtActual.getText().contains("sinan"));
